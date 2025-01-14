@@ -1,0 +1,36 @@
+name: Nueva caracteristica
+description: Sugiere or solicita a nueva caracteristic
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Por favor diligencia las secciones abajo para describir la nueva caracteristica sugerida.
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripcion de la caracteristica
+      placeholder: Un boton en la pantalla X que permite hacer Y
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Debe ser implementada para
+      placeholder: Permite hacer Y que debe ser implementada para hacer Z
+  - type: textarea
+    id: context
+    attributes:
+      label: Context Adicional
+      placeholder: |
+        Añade contexto o captura de pantalla acerca de la caracteristica requerida.
+  - type: dropdown
+    id: assign
+    attributes:
+      label: "Deseas trabajar en esta Issue?"
+      options:
+        - "Si"
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por tu sugerencia! Se verificará si se puede implementar.

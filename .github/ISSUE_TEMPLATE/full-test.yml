@@ -1,0 +1,65 @@
+name: Formulario de prueba de Github Issue 
+description: Formulario de prueba de Github Issue Guiado
+title: "[Prefix] "
+labels: ["bug","enhancement","documentation","question"]
+assignees: ["zelgaliz215"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Descripción del problema
+        Por favor diligencia las secciones siguientes para ayudarnos a reproducir el problema
+        y proporcionar el máximo detalle posible.
+
+        ## Pasos para reproducir el problema
+        1. Paso 1
+        2. Paso 2
+      
+        ## Captura de pantalla o vídeo
+        Puedes agregar capturas de pantalla o un vídeo que demuestre el problema.
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción del Issue
+      placeholder: Escribe una descripción concisa y detallada del problema Ejempl Cuando hago click sucede...
+    validations:
+      - required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducir el issue
+      placeholder: |
+      1. Paso 1
+      2. Click aqui
+      
+        Ejemplos:
+        ```
+        - Comando 1
+        - Comando 2
+        ```
+    validations:
+      - required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Cual es el resultado esperado
+      placeholder: Se espera que la lista de productos incluye los productos seleccionados
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Captura de pantalla o vídeo del problema
+      placeholder: |
+        Puedes agregar capturas de pantalla o un vídeo que demuestre el problema.
+  - type: checkboxes
+    id: term
+    attributes:
+      label: Campos extra
+      options:
+        - label: He revisado la funcion de buscar para verificar si el issue ya existe
+        - label: Quiero trabajar en este issue
+  - type: markdown
+    attributes:
+      value: |
+        ## ¿Necesitas ayuda adicional?
+        Por favor consulta la sección de ayuda de GitHub para obtener más información sobre cómo trabajar con GitHub Issues.
+    
