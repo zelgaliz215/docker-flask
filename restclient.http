@@ -25,3 +25,15 @@ Content-Type: application/json
 {
     "new_quantity": 107
 }
+
+### PATCH /product/details HTTP/1.1
+
+PATCH /product/details HTTP/1.1
+Host: localhost:5000
+Content-Type: application/json
+
+{
+    "name": "Smartphone",
+    "price": 1200.0,
+    "quantity": 15
+}
